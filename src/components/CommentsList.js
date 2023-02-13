@@ -5,7 +5,7 @@ const CommentsList = ({ comments }) => {
   return (
     <div>
       {comments.map((comment, index) => (
-        <div>
+        <div key={index}>
           <Comment data={comment} key={Math.random()} />
           <div className="pl-5 border border-l-black ml-5">
             <CommentsList comments={comment.replies} />
