@@ -33,7 +33,7 @@ const LiveChat = () => {
         </div>
       </div>
       <form
-        className="w-full m-2 p-2 border border-black"
+        className="w-full m-4 p-2 border border-black"
         onSubmit={(e) => {
           e.preventDefault();
           console.log('Submir', liveMesage);
@@ -47,7 +47,7 @@ const LiveChat = () => {
         }}
       >
         <input
-          className="w-97 border border-black px-2"
+          className="w-[70%] border border-black px-4"
           type="text"
           value={liveMesage}
           onChange={(e) => {
